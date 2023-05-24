@@ -1,9 +1,15 @@
 package org.cts.Entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+
 import java.util.Objects;
 
+@Entity
 public class Employee {
-    private Long id;
+    private @Id
+    @GeneratedValue Long id;
     private String name;
     private String role;
 
